@@ -171,4 +171,10 @@ class Boards
       @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
     end
   end
+
+  def x_coord
+    @coord_translate
+  end
+
+
 end
