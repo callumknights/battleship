@@ -4,7 +4,7 @@ class Boards
   attr_reader :player_one_board, :player_two_board, :coord_translate, :ships
   def initialize
     @player_one_board = [
-                    ["---PLAYER ONE BATTLEFIELD---"],
+                    ["---PLAYER ONE BATTLEFIELD---", "-"],
       ["  ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
       [" 1", "~", "~", "~", "~", "~", "~", "~", "~", "~", "~"],
       [" 2", "~", "~", "~", "~", "~", "~", "~", "~", "~", "~"],
@@ -18,7 +18,7 @@ class Boards
       ["10", "~", "~", "~", "~", "~", "~", "~", "~", "~", "~"],
     ]
     @player_two_board = [
-                    ["---PLAYER TWO BATTLEFIELD---"],
+                    ["---PLAYER TWO BATTLEFIELD---", "-"],
       ["  ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
       [" 1", "~", "~", "~", "~", "~", "~", "~", "~", "~", "~"],
       [" 2", "~", "~", "~", "~", "~", "~", "~", "~", "~", "~"],
