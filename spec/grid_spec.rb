@@ -1,6 +1,6 @@
-require 'grid'
-require 'checks'
-require 'game'
+require './lib/grid'
+require './lib/checks'
+require './lib/game'
 
 describe Boards do
 
@@ -241,8 +241,28 @@ describe Players do
     expect(players.board_check.player_one_board[9][3]).to eql("X")
     expect(players.clashes_one("c4", "vertical", 5)).to eql(false)
   end
+  it 'can change ~ to 0 when missed player one' do
+    players.hit_one("a4")
+    expect(players.board_check.player_one_board[5][1]).to eql("0")
+  end
+  it 'can change X to @ when hit player one' do
+    players.board_check.add_aircraft_carrier_one("c3", "horizontal")
+    players.hit_one("d3")
+    expect(players.board_check.player_one_board[4][4]).to eql("@")
+  end
+  it 'can change ~ to 0 when hit player two' do
+    players.hit_two("d3")
+    expect(players.board_check.player_two_board[4][4]).to eql("0")
+  end
+  it 'can change X to @ when hit player two' do
+    players.board_check.add_aircraft_carrier_two("c3", "horizontal")
+    players.hit_two("d3")
+    expect(players.board_check.player_two_board[4][4]).to eql("@")
+  end
+
 end
 
+=begin
 describe Execute do
   let! (:execute) {Execute.new}
 
@@ -250,3 +270,4 @@ describe Execute do
     expect(execute.show_player_one_board).to eql(false)
   end
 end
+=end
