@@ -46,129 +46,129 @@ class Boards
 
   def add_aircraft_carrier_one(place, orientation)
     if orientation == "horizontal"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 4] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 4] = "X"
     else
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 5][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 5][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_battleship_one(place, orientation)
     if orientation == "horizontal"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
     else
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_destroyer_one(place, orientation)
     if orientation == "horizontal"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
     else
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_submarine_one(place, orientation)
     if orientation == "horizontal"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
     else
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_patrol_one(place, orientation)
     if orientation == "horizontal"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
     else
-      @player_one_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_one_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_one_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_aircraft_carrier_two(place, orientation)
     if orientation == "horizontal"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 4] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 4] = "X"
     else
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 5][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 5][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_battleship_two(place, orientation)
     if orientation == "horizontal"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 3] = "X"
     else
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 4][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_destroyer_two(place, orientation)
     if orientation == "horizontal"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
     else
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_submarine_two(place, orientation)
     if orientation == "horizontal"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 2] = "X"
     else
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 3][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
   def add_patrol_two(place, orientation)
     if orientation == "horizontal"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase] + 1] = "X"
     else
-      @player_two_board[place[1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
-      @player_two_board[place[1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 1][@coord_translate[place.chop.upcase]] = "X"
+      @player_two_board[place[1..-1].to_i + 2][@coord_translate[place.chop.upcase]] = "X"
     end
   end
 
